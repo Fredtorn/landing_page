@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -11,24 +11,24 @@ nav {
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(196, 167, 223);
+    box-sizing: border-box;
+
 }
 
 .logo {
     width: 10%;
     height: 100px;
-    padding: 5px;
+    padding: 4px;
 }
 
 .topNav {
+    box-sizing: border-box;
     display: flex;
     width: 90%;
     gap: 20px;
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
-    position: sticky;
-    top: 0;
-    margin: 0;
 }
 
 a {
@@ -37,7 +37,7 @@ a {
     padding: 10px;
 }
 
-li {
+.navLinks {
     list-style-type: none;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@ li {
 
 li:hover {
     text-decoration: underline;
-    text-decoration-color: white;
+    text-decoration-color: rgb(138, 81, 191);
     text-decoration-thickness: 4px;
     text-underline-offset: 5px;
 
@@ -66,19 +66,25 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    height: 500px;
-    width: 800px;
-    background-color: white;
-    border-color: rgb(53, 180, 212);
-    margin: auto;
+    height: 600px;
+    background-color: rgb(251, 248, 245);
     text-align: center;
-    padding: 0 50px 0 50px;
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 80px;
+}
+
+header h2 {
+    font-size: 30px;
+    color: black;
+    padding: 30px;
 }
 
 .callToAction {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     background-color: rgb(138, 81, 191);
     border-style: none;
@@ -87,24 +93,115 @@ header {
 }
 
 .infoContainer {
+
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     height: 500px;
-    padding: 0 50px 0 50px;
+    justify-content: center;
+}
+
+.infoContainer h1 {
+    font-size: 30px;
 }
 
 .infoImage {
     object-fit: cover;
     object-position: 10%;
-    width: 40%;
-    height: 80%;
-    padding: 20px;
+    width: 45%;
+    height: 100%;
+    padding: 30px;
     border-radius: 15%;
 }
 
 .infoText {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    padding: 100px;
+    width: 50%;
+    padding: 80px;
+}
+
+.infoText h1 {
+    font-size: 50px;
+}
+
+
+.studentContainer {
+    background-color: rgb(251, 248, 245);
+    height: 1000px;
+}
+
+.column {
+    display: flex;
+    margin: auto;
+}
+
+.studentTitle {
+    font-size: 100px;
+    margin: auto;
+    padding: 80px;
+    text-align: center;
+    width: 100%;
+}
+
+.studentImgText {
+    margin: auto;
+    width: 22%;
+    height: 300px;
+}
+
+.studentImg {
+    border-radius: 50%;
+    height: 90%;
+    padding-bottom: 20px;
+}
+
+.applyContainer {
+    text-align: center;
+    padding: 50px;
+    height: 650px;
+}
+
+.applyContainer h1 {
+    font-size: 80px;
+}
+
+.applyContainer p {
+    font-size: 30px;
+    padding: 50px 100px;
+}
+
+footer {
+    height: 300px;
+    background-color: rgb(196, 167, 223);
+    display: flex;
+}
+
+.links {
+    width: 40%;
+    list-style-type: none;
+    line-height: 30px;
+    padding: 10px 10px 10px 50px;
+
+}
+
+.contact {
+    width: 40%;
+}
+
+.logoFooter {
+    width: 20%;
+    padding: 50px;
+
+}
+
+.contact,
+a,
+address {
+    color: rgb(79, 44, 111);
+    padding-left: 0;
+}
+
+address {
+    padding-top: 20px;
 }
