@@ -74,6 +74,7 @@ header {
 
 header h1 {
     font-size: 80px;
+
 }
 
 header h2 {
@@ -125,6 +126,9 @@ header h2 {
     font-size: 50px;
 }
 
+.infoText h2 {
+    font-size: 35px;
+}
 
 .studentContainer {
     background-color: rgb(251, 248, 245);
